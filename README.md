@@ -40,4 +40,4 @@ Look at *user_cpan_installation.sh* script via your editor. By default:
 References
 =============
 
-[1]: [Oddmuse: CPAN Local Install](http://www.oddmuse.org/wiki/CPAN_Local_Install)
+1. [Oddmuse: CPAN Local Install](http://www.oddmuse.org/wiki/CPAN_Local_Install)
