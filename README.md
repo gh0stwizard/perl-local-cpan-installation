@@ -1,3 +1,4 @@
+
 Description
 ===========
 
@@ -34,3 +35,9 @@ Look at *user_cpan_installation.sh* script via your editor. By default:
 
 * CPAN's configuration files lies in $HOME/.cpan
 * Installed modules are place in $HOME/perl
+
+
+References
+=============
+
+[1]: [Oddmuse: CPAN Local Install](http://www.oddmuse.org/wiki/CPAN_Local_Install)
