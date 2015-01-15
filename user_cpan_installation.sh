@@ -25,7 +25,7 @@ echo "\$CPAN::Config->{mbuild_install_arg}='--installdirs=site --install_base=${
 	>> ${CPAN_CONF}
 
 # initialize cpan to fill in required fields into MyConfig.pm
-${PERL_FILE} -MCPAN -e shell
+${PERL_FILE} -MCPAN -e shell || exit 1
 
 # auto generate PERL5LIB environment variable
 ARCH_NAME=`${PERL_FILE} -MConfig -e 'print $Config{archname}'`
