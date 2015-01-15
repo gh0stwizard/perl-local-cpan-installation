@@ -33,5 +33,5 @@ PERL5LIB="${PERL_HOME}/lib/perl5:${PERL_HOME}/lib/perl5/${ARCH_NAME}"
 
 echo
 echo "Export the variable below in your ~/.bashrc or ~/.zshrc file:"
-echo "   PERL5LIB=${PERL5LIB}"
+echo "   PERL5LIB=\"${PERL5LIB}\""
 echo
