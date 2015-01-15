@@ -13,12 +13,16 @@ PERL_HOME="$HOME/perl"
 # our magic starts here
 mkdir -p ${CPAN_HOME}/CPAN || exit 1
 
-echo "\$CPAN::Config->{cpan_home}='${CPAN_HOME}';\n\
-\$CPAN::Config->{install_help}='manual';\n\
-\$CPAN::Config->{makepl_arg}='INSTALLDIRS=site INSTALL_BASE=${PERL_HOME}';\n\
-\$CPAN::Config->{mbuild_arg}='--installdirs=site --install_base=${PERL_HOME}';\n\
-\$CPAN::Config->{mbuild_install_arg}='--installdirs=site --install_base=${PERL_HOME}';\
-" > ${CPAN_CONF}
+echo "\$CPAN::Config->{cpan_home}='${CPAN_HOME}';" \
+	>> ${CPAN_CONF}
+echo "\$CPAN::Config->{install_help}='manual';" \
+	>> ${CPAN_CONF}
+echo "\$CPAN::Config->{makepl_arg}='INSTALLDIRS=site INSTALL_BASE=${PERL_HOME}';" \
+	>> ${CPAN_CONF}
+echo "\$CPAN::Config->{mbuild_arg}='--installdirs=site --install_base=${PERL_HOME}';" \
+	>> ${CPAN_CONF}
+echo "\$CPAN::Config->{mbuild_install_arg}='--installdirs=site --install_base=${PERL_HOME}';" \
+	>> ${CPAN_CONF}
 
 # initialize cpan to fill in required fields into MyConfig.pm
 ${PERL_FILE} -MCPAN -e shell
